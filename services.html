@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Emperial Waste</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="/visual/Emperial logo.png" alt="Emperial Waste Logo" class="logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="menu-icon">&#8942;</div>
+    </div>
+  </nav>
+
+  <!-- Mobile Dropdown -->
+  <div class="mobile-menu">
+    <a href="services.html" class="active">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- Page Content -->
+  <main class="page-content">
+    <h1>Our Services</h1>
+    <p>At <strong>Emperial Waste</strong>, we provide premium waste and facility management services tailored for industries, corporations, and communities.</p>
+    <ul>
+      <li><strong>Large Waste Disposal</strong> – Efficient and environmentally friendly waste collection and disposal services.</li>
+      <li><strong>Skip Container & Rubbish Bin Sales</strong> – Affordable and durable containers for businesses and households.</li>
+      <li><strong>Disinfection & Fumigation</strong> – Professional hygiene services for a safer environment.</li>
+    </ul>
+  </main>
+</body>
+<script>
+  // Toggle mobile menu
+  const menuIcon = document.querySelector('.menu-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  menuIcon.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+</script>
+</html>

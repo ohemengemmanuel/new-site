@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emperial Waste</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left" >
+       <a class="nav-namelink" href="index.html">
+        <img src="/visual/Emperial logo.png" alt="Emperial Waste Logo" class="logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="menu-icon">
+        &#8942;
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Dropdown -->
+  <div class="mobile-menu">
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="hero">
+    <h1>We offer premium waste and facility management services.</h1>
+    <ul>
+      <li>Large waste disposal</li>
+      <li>We sell skip containers and rubbish bins</li>
+      <li>Disinfection and fumigation services</li>
+    </ul>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </main>
+</body>
+<script>
+  // Toggle mobile menu
+  const menuIcon = document.querySelector('.menu-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  menuIcon.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+</script>
+</html>

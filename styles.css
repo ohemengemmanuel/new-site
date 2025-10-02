@@ -1,0 +1,141 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #dbfac4d6;
+  color: rgb(5, 83, 5);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  color: rgb(68, 151, 59);
+  padding: 0.8rem 1rem;
+}
+
+.navbar .logo {
+  height: 68px;
+}
+
+.nav-links {
+  display: none;
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: rgb(51, 143, 26);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile Dropdown */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgb(15, 119, 15);
+}
+
+.mobile-menu a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  background: rgb(5, 83, 5);
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+/* Main Section */
+.hero {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+  color: rgb(15, 119, 15);
+}
+
+.hero ul {
+  list-style: disc inside;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(15, 119, 15);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: rgb(5, 83, 5);
+}
+
+/* Contact Form */
+.contact-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Desktop Navigation */
+@media(min-width: 768px) {
+  .menu-icon,
+  .mobile-menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: block;
+  }
+}

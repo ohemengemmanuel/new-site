@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Emperial Waste</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+       <a href="index.html">
+        <img src="/visual/Emperial logo.png" alt="Emperial Waste Logo" class="logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+      <div class="menu-icon">&#8942;</div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html" class="active">Contact Us</a>
+  </div>
+
+  <!-- Contact Form -->
+  <main class="contact-section">
+    <h1>Contact Us</h1>
+    <form class="contact-form">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="company">Company</label>
+      <input type="text" id="company" name="company">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address">
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </main>
+</body>
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  menuIcon.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+</script>
+</html>

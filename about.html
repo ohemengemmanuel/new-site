@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Emperial Waste</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="/visual/Emperial logo.png" alt="Emperial Waste Logo" class="logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="menu-icon">&#8942;</div>
+    </div>
+  </nav>
+
+  <!-- Mobile Dropdown -->
+  <div class="mobile-menu">
+    <a href="services.html">Services</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- Page Content -->
+  <main class="page-content">
+    <h1>About Us</h1>
+    <p><strong>Emperial Waste</strong> is dedicated to delivering reliable waste management and facility services across Kasoa, Weija, and beyond.</p>
+    <p>We specialize in:</p>
+    <ul>
+      <li>Providing large-scale waste disposal solutions.</li>
+      <li>Supplying skip containers and rubbish bins for businesses and communities.</li>
+      <li>Offering disinfection and fumigation services to promote healthier environments.</li>
+    </ul>
+    <p>Our mission is to create cleaner, safer, and more sustainable surroundings while ensuring professional service delivery to all our clients.</p>
+  </main>
+</body>
+<script>
+  // Toggle mobile menu
+  const menuIcon = document.querySelector('.menu-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  menuIcon.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+</script>
+</html>
