@@ -1,0 +1,346 @@
+/* General Reset */
+body {
+    margin: 0;
+    background-color: #dbfac4d6;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 6px 5px rgba(48, 116, 28, 0.356);
+}
+
+nav {
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: flex;
+    border-bottom: 1px solid green;
+}
+
+nav ul li a:hover{
+   color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(21, 114, 21);
+    font-size: 1.4rem;
+}
+
+/* Logo Styling */
+.emp-logo {
+    width: 160px;
+}
+
+main{
+    width: 100vw;
+}
+
+/* Hero Section */
+.hero {
+    margin: auto;
+    width: 40%;
+    animation: rescale-hero 2s ease forwards;
+}
+
+.message {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 7%;
+    padding-inline: 15px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    color: rgb(5, 83, 5);
+    animation: rescale-text 2s ease forwards;
+}
+
+.message2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 13px;
+    padding-inline: 15px;
+    font-size: 1.7rem;
+    font-weight: 100;
+    width: 80%;
+    margin-top: 7px;
+    color: rgb(15, 69, 15);
+    animation: rescale-text 2s ease forwards;
+}
+
+.ctu-btn {
+    text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+    background-color: rgb(15, 119, 15);
+    color: #f0f0f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    border: 0;
+    padding: 20px;
+    animation: rescale-button 2s ease forwards;
+}
+
+.hero li {
+    padding-bottom: 9px;
+    font-size: 1.3rem;
+}
+
+footer {
+    font-size: 0.6rem;
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+      position: relative;
+     /* /*  width: 300px; */
+      /* height: 200px; */
+      /* overflow: hidden; */ 
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.serviceContainer{
+        margin-left: 1.5vw;
+        margin-right: 0.5vw;
+        display: flex;
+        gap: 2vw ;
+        max-width: 100vw;
+    }
+
+.service{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-radius: 17px;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+        padding: 5px;
+        background-color: rgb(244, 244, 244);
+    }
+
+.serviceTitle{
+        padding-inline: 15px;
+        max-width: 510px;
+        font-size: 1.5rem;
+    }
+.subtext {
+        line-height: 1.8;
+        padding-inline: 15px;
+        text-align: justify;
+        max-width: 500px;
+ 
+        
+    }
+
+    .top{
+        margin-top: 2%;
+    }
+
+.contactus-container{
+    /* border: 2px solid; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    width: 80vw;
+    margin: auto;
+    margin-top: 4vh;
+    display: flex;
+    gap: 5vw;
+    min-height: 60vh;
+}
+
+.leftside{
+    margin-top: 8vh;
+    margin-left: 5vw;
+    color: rgb(5, 83, 5);
+}
+
+.rightside{
+    border-radius: 25px;
+    padding:2.3vw;
+    background-color: white;
+    box-shadow: 0 1px 6px 5px rgba(48, 116, 28, 0.356);;
+    width: 50%;
+}
+
+.form-message{
+    margin: auto;
+
+    font-size: 200%;
+    margin-bottom: 1vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.row{
+    gap: 5vw;
+    display: flex;
+    margin: 3vh;
+}
+
+label{
+    margin-bottom: 0.2vw;
+}
+
+input,textarea{
+    font-size: large;
+}
+
+.preferedinputwidth{
+    padding-inline: 12px;
+    filter: blur(0.4px);
+    width: 15vw;
+    height: 4vh;
+    border-radius: 10px;
+    border:  1px solid rgba(0, 0, 0, 0.178);
+}
+
+.preferedinputwidth:hover,.yourmessage:hover{
+    border-radius: 10px;
+    border-bottom:  1.5px  solid rgba(37, 216, 37, 0.67);
+}
+
+.yourmessage{
+    padding-inline: 12px;
+    padding-top: 10px;
+    filter: blur(0.4px);
+    width: 36.5vw;
+    height: 9vh;
+    border-radius: 10px;
+    border:  1px solid rgba(0, 0, 0, 0.175);
+}
+
+.reset-btn,.sendmessage-btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 5vh;
+    font-size: larger;
+    border-radius: 8px;
+    border: 0;
+    padding-inline: 1vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.3vw;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.reset-btn:active,.sendmessage-btn:active{
+/*     border: 2px dashed blue; */
+}
+
+
+.sendmessage-btn{
+    background-color: rgb(5, 83, 5);
+    
+}
+
+.reset-btn{
+    background-color: rgb(253, 94, 94);
+}
+
+.form-btns{
+    margin-left: 1.4vw;
+}
+    
+/* Keyframes for Rescaling */
+@keyframes rescale-hero {
+    from {
+        width: 40%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes rescale-text {
+    from {
+        font-size:6rem;
+    }
+    to {
+        font-size: 3.5rem;
+    }
+}
+
+@keyframes rescale-button {
+    from {
+        width: 250px;
+        font-size: 1.2rem;
+    }
+    to {
+        width: 20vw;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+/* Media Queries for Triggers */
+@media (max-width: 768px) {
+    .hero {
+        animation: rescale-hero 2s ease forwards;
+    }
+
+    .message,
+    .message2 {
+        animation: rescale-text 2s ease forwards;
+    }
+
+    .ctu-btn {
+        animation: rescale-button 2s ease forwards;
+    }
+
+    footer {
+        
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        animation: rescale-hero 2s ease forwards;
+    }
+
+    .message,
+    .message2 {
+        animation: rescale-text 2s ease forwards;
+    }
+
+    .ctu-btn {
+        animation: rescale-button 2s ease forwards;
+    }
+
+    footer {
+       
+    }
+}
+
+ 

@@ -1,0 +1,5 @@
+/* Ensure navs are solid white */
+nav, .nav, .navbar, header {
+	background: #ffffff !important;
+	background-color: #ffffff !important;
+}
